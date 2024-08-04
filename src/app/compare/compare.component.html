@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculator to find a new home in Florida">
+    <title>Calculate New Home Zestimate</title>
+</head>
+
+<body>
+    <div class="container">
+      <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <!-- Form contents -->
+        <div class="form-group">
+            <!-- Address Modal -->
+            <div id="addressModal" class="modal">
+                <div class="modal-content">
+                    <h2>Enter Your Address for A Free Florida Home Comparison</h2>
+                    <input type="text" formControlName="address" class="form-control" placeholder="Enter Your Address" required>
+                    <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary mt-4">Calculate</button>
+                    <p>The purpose of this page is to showcase the diversity of locations within Florida. When I first
+                        moved here, my familiarity was limited to major cities like Tampa, Orlando, and Miami.
+                        However, over the years, I've discovered numerous lesser-known cities that offer unique
+                        lifestyles and opportunities. By utilizing the Florida home comparison feature, which opens in
+                        a new window, users can explore the locations of various properties. This tool serves as a
+                        starting point for uncovering hidden gems in the Sunshine State, providing valuable insights
+                        for those seeking to explore beyond the well-known destinations. The more accurate the address the more accurate the result. 
+                        All data is provided "as is" via the Zestimate API.</p>
+                        <img src="..\..\assets\logo\Zillow.png" alt="Florida" style="width: 250px; height: 100px;">
+                </div>
+            </div>
+        </div>
+    </form>
+        </div>       
+</body>
+
+</html>

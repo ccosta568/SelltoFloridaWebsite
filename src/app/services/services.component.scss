@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left:0;
+    padding-right:0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(252, 250, 250, 0.8); /* 50% transparency */
+    border-radius: 10%;
+  }
+  
+
+  .service {
+    margin-bottom: 30px;
+
+  }
+  h1{
+    text-align: center;
+  }
+  .service h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .service p {
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    line-height: 1.5;
+    
+  }
+  
